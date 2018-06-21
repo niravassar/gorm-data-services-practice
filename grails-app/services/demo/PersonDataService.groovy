@@ -7,7 +7,6 @@ import grails.gorm.services.Service
 interface PersonDataService {
     Person findByName(String name)
     Integer findPersonAge(String name)
-
     @Join('addresses')
     Person findEagerly(String name)
     Person savePerson(Person person)

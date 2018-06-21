@@ -10,9 +10,5 @@ class Person {
     List<Address> addresses
 
     static hasMany = [addresses: Address]
-
-    static constraints = {
-        age nullable: true
-    }
 }
 

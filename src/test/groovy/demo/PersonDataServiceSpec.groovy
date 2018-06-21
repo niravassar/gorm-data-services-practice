@@ -9,11 +9,8 @@ class PersonDataServiceSpec extends HibernateSpec {
     @Shared
     PersonDataService personDataService
 
-    def setupSpec() {
-        personDataService = this.hibernateDatastore.getService(PersonDataService)
-    }
-
     def setup() {
+        personDataService = this.hibernateDatastore.getService(PersonDataService)
         BootStrap.initPersons()
     }
 
